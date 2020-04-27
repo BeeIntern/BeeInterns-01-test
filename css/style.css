@@ -1,0 +1,117 @@
+/* df sdfsf */
+
+h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 91px;
+    color: #FFFFFF;
+}
+
+.container {
+    margin: auto auto;
+    background-color: #282828;
+    max-height: 100vh;
+    max-width: 700px;
+}
+
+.chatbot {
+    box-sizing: border-box;
+    width: 769px;
+    height: 766px;
+    left: 335px;
+    top: 169px;
+    background: #282828;
+    border: 1px solid #EDEDED;
+    border-radius: 37.5px;
+    padding: 0 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.window {
+    width: calc(100%+20px);
+    overflow-y: scroll;
+    margin-bottom: 30px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    background: #F3F3F3;
+    border-radius: 32px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+
+textarea {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    border: none;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    overflow: hidden;
+    background: transparent;
+    outline: none;
+}
+
+.dots {
+    display: flex;
+    margin-right: 5px;
+}
+
+.dot {
+    background-color: black;
+    height: 4px;
+    width: 4px;
+    margin: 2px;
+    visibility: visible;
+    border-radius: 50%;
+    animation: flashin-dots 2s infinite;
+}
+
+.dot2 {
+    animation-delay: 0.3s;
+}
+
+.dot3 {
+    animation-delay: 0.5s;
+}
+
+@keyframes flashin-dots {
+    0% {
+        background-color: black;
+    }
+    10% {
+        background-color: transparent;
+    }
+    50% {
+        background-color: black;
+    }
+    100% {
+        background-color: black;
+    }
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    outline: none;
+}
+
+.gray-button {
+    display: none;
+}
