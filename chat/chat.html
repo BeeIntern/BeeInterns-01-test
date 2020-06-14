@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="chatLog">- - C H A T - -<br></p>
+    <input id="userBox" type="text" onkeydown="if (event.keyCode == 13) {talk()}">
+</body>
+<script>
+    know = {
+        "/start": "Привет, меня зовут Чат-бот, а как зовут тебя? ",
+        "how are you?": "good",
+        "ok": ":)",
+        "WIY": "Zafar",
+        "What's your name": "Halim",
+    };
+
+    function talk() {
+        var user = document.getElementById("userBox").value;
+        document.getElementById("userBox").value = "";
+        document.getElementById("chatLog").innerHTML += user + "<br>";
+        if (user in know) {
+            document.getElementById("chatLog").innerHTML += know[user] + "<br>";
+        } else {
+            document.getElementById("chatLog").innerHTML += "I don't understand...<br>";
+        }
+    }
+</script>
+
+</html>
+
+<!--/start — начало общения с чат ботом. Ответ: «Привет, меня зовут Чат-бот, а как зовут тебя?». Если ввели другое значение, чат-бот должен отвечать: «Введите команду /start, для начала общения»-->
+<!--/name: Alex — ответ: «Привет Alex, приятно познакомится. Я умею считать, введи числа которые надо посчитать»-->
+<!--/number: 7, 9-->
+<!--После ввода чисел Чат-бот должен предложить ввести одно из действий: -, +, *, /-->
+<!--После ввода действия, Чат-бот возвращает результат-->
+<!--/stop — Ответ Чат-бота: «Всего доброго, если хочешь поговорить пиши /start»-->
+<!-- https://www.youtube.com/watch?v=9Kt9eWEEpHI
+https://github.com/MakkusuOtaku/old-chatbot/blob/master/index.html 
+
+https://api.weather.yandex.ru/v1/forecast?lat=55.75396&lon=37.620393&extra=true&lang=ru_RU&limit=6&X-Yandex-API-Key:4596bf81-e45f-46b3-9199-70df0d7b4f23
+<api-weather@support.yandex.ru>
+    Иван Снегов
+Поддержка Яндекса
+https://yandex.ru/dev/weather/
+[Ticket#20061317155777088] {"status":403,"message":"Forbidden"}
+https://yandex.ru/dev/weather/doc/dg/concepts/forecast-test-docpage/
+
+API для погоды
+https://gist.github.com/nokimaro/1c001c22490e2dfdfb29
+
+-->
