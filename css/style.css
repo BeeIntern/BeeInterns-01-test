@@ -1,4 +1,9 @@
-/* df sdfsf */
+.container {
+    margin: auto auto;
+    background-color: #282828;
+    max-height: 100vh;
+    max-width: 700px;
+}
 
 h1 {
     font-style: normal;
@@ -7,14 +12,6 @@ h1 {
     line-height: 91px;
     color: #FFFFFF;
 }
-
-.container {
-    margin: auto auto;
-    background-color: #282828;
-    max-height: 100vh;
-    max-width: 700px;
-}
-
 .chatbot {
     box-sizing: border-box;
     width: 769px;
@@ -29,20 +26,17 @@ h1 {
     flex-direction: column;
     justify-content: flex-end;
 }
-
 .wrapper {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     overflow: hidden;
 }
-
 .window {
     width: calc(100%+20px);
     overflow-y: scroll;
     margin-bottom: 30px;
 }
-
 .form {
     display: flex;
     align-items: center;
@@ -53,7 +47,6 @@ h1 {
     padding: 10px 30px;
     box-sizing: border-box;
 }
-
 textarea {
     font-weight: normal;
     font-size: 20px;
@@ -66,12 +59,10 @@ textarea {
     background: transparent;
     outline: none;
 }
-
 .dots {
     display: flex;
     margin-right: 5px;
 }
-
 .dot {
     background-color: black;
     height: 4px;
@@ -81,15 +72,12 @@ textarea {
     border-radius: 50%;
     animation: flashin-dots 2s infinite;
 }
-
 .dot2 {
     animation-delay: 0.3s;
 }
-
 .dot3 {
     animation-delay: 0.5s;
 }
-
 @keyframes flashin-dots {
     0% {
         background-color: black;
@@ -104,14 +92,12 @@ textarea {
         background-color: black;
     }
 }
-
 button {
     background-color: transparent;
     border: none;
     padding: 0;
     outline: none;
 }
-
 .gray-button {
     display: none;
 }
