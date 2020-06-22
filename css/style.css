@@ -36,6 +36,7 @@ h1 {
     width: calc(100%+20px);
     overflow-y: scroll;
     margin-bottom: 30px;
+    color: wheat;
 }
 .form {
     display: flex;
@@ -100,4 +101,8 @@ button {
 }
 .gray-button {
     display: none;
+}
+
+.textmessage {
+    color: darkblue;
 }
